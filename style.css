@@ -8,32 +8,38 @@
 
 	height: 100vh;
 	width: 100%;
-	background-image: url(./img/quinton-coetzee-xcweYgakbRo-unsplash.jpg);
+	background-image: url(./img/F9ielj.webp);
 	background-size: cover;
 	background-position: center;
 }
 
 nav{
+	position: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 45px;
 	padding-left: 8%;
 	padding-right: 8%;
+	width: 100%;
+	z-index: 999;
 }
+
+
 .logo{
 	color: white;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
 }
+
+
 span{
 	color: orangered;
 }
 
-nav {
-  position: fixed;
-}
+
+
 nav ul li{
 
 	list-style-type: none;
@@ -116,7 +122,7 @@ h4{
   z-index: 10000;
 	width: 100%;
 	padding: 100px 0px;
-	background-color: #191919;
+	background-color: whitesmoke;
 }
 .about img{
 	height: auto;
@@ -134,13 +140,13 @@ h4{
 	justify-content: space-around;
 }
 .about-text h2{
-	color: white;
+	color: #191919;
 	font-size: 75px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 .about-text h5{
-	color: white;
+	color: #191919;
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin-bottom: 25px;
@@ -148,7 +154,7 @@ h4{
 }
 .about-text p{
 	
-	color: #fcfc;
+	color: #191919;
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
@@ -156,7 +162,7 @@ h4{
 }
 button{
 	background-color: orangered;
-	color: white;
+	color: #eee;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -164,35 +170,37 @@ button{
 	border-radius: 30px;
 	transition: .4s; 
 }
-button:hover{
+/* button:hover{
 	background-color: transparent;
 	border: 2px solid orangered;
 	cursor: pointer;
-}
+} */
 
 .service{
-	background: #101010;
+	background: white;
 	width: 100%;
 	padding: 100px 0px;
 }
 .title h2{
-	color: white;
+	color: #191919;
 	font-size: 75px;
 	width: 1130px;
 	margin: 30px auto;
 	text-align: center;
 }
 .box{
+	z-index: 1000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
 }
 .card{
+	
 	height: 365px;
 	width: 335px;
 	padding: 20px 35px;
-	background: #191919;
+	background: whitesmoke;
 	border-radius: 20px;
 	margin: 15px;
 	position: relative;
@@ -200,6 +208,7 @@ button:hover{
 	text-align: center;
 }
 .card i{
+	z-index: 1000;
 	font-size: 50px;
 	display: block;
 	text-align: center;
@@ -208,12 +217,12 @@ button:hover{
 
 }
 h5{
-	color: white;
+	color: #191919;
 	font-size: 23px;
 	margin-bottom: 15px;
 }
 .pra p{
-	color: #fcfc;
+	color: #191919;
 	font-size: 16px;
 	line-height: 27px;
 	margin-bottom: 25px;
@@ -233,15 +242,7 @@ h5{
 	border: 2px solid orangered;
 	cursor: pointer;
 }
-.contact-me{
-	width: 100%;
-	height: 290px;
-	background: #191919;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-}
+
 
 /*form */
 .email{
@@ -260,12 +261,7 @@ h5{
 	border-color: orangered !important;
 }
 
-.contact-me p{
-	color: white;
-	font-size: 30px;
-	font-weight: bold;
-	margin-bottom: 25px;
-}
+
  .button-two{
 	background-color: orangered;
 	color: white;
@@ -281,6 +277,113 @@ h5{
 	border: 2px solid orangered;
 	cursor: pointer;
 }
+
+/*Projects*/
+
+.profile{
+	width: 100%;
+	height: 790px;
+	font-family: 'Josefin Sans';
+	font-size: 40px;
+	color: #101010;
+	background: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	font-size: 15px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+ .sthombe{
+	width: 390px;
+	height: 210px;
+	
+ }
+
+ .sthombe-1{
+	width: 390px;
+	height: 230px;
+	margin: 8px;
+ }
+
+ .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-image: linear-gradient(#F06292, #F0F4C3);
+  }
+  
+  .container:hover .overlay {
+	opacity: 1;
+  }
+
+
+
+ .one-by-two-image-grid {
+	display: grid;
+	grid-template-columns: 1fr; }
+	@media (min-width: 500px) {
+	  .one-by-two-image-grid {
+		grid-template-columns: 1fr 1fr; } }
+	@media (min-width: 500px) {
+	  .one-by-two-image-grid .image-1 {
+		grid-column: 1 / -1;
+		grid-row: 1; } }
+	@media (min-width: 900px) {
+	  .one-by-two-image-grid .image-1 {
+		grid-column: 1 / 2;
+		grid-row: 1 / span 2; }
+		.one-by-two-image-grid .image-1 img {
+		  height: 100%;
+		  object-fit: cover;
+		  object-position: left bottom; } }
+	@media (min-width: 900px) {
+	  .one-by-two-image-grid .image-2 {
+		grid-column: 2 / 3;
+		grid-row: 1; } }
+	@media (min-width: 900px) {
+	  .one-by-two-image-grid .image-3 {
+		grid-column: 2 / 3;
+		grid-row: 2; } }
+
+
+
+/* Footer*/
 footer{
 	position: relative;
 	width: 100%;
@@ -330,3 +433,6 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
+
+
+/*Projects*/
