@@ -14,7 +14,7 @@
 
 	<div class="hero">
 		<nav>
-			<h2 class="logo">A<span>HEAD</span></h2>
+			<h2 class="logo">LA.<span>MANTINI</span></h2>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#about">About Us</a></li>
@@ -22,7 +22,7 @@
 				<li><a href="#project">Projects</a></li>
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
-			<a href="#" class="btn">HIRE ME!</a>
+			<a href="#contact" class="btn">HIRE ME!</a>
 		</nav>
 
 		<div class="content">
@@ -42,7 +42,7 @@
 				<h5>Developer <span>& Designer</span></h5>
 				<p>I am a front-end | Graphic Designer | web developer. I can provide clean code and responsive design. I also make the website more & more interactive with web animations. I enjoy designing and building throught the power of technology. I can make your website accessible to all users, regardless of their device.</p>
 				
-				
+				<!-- Icons -->
 				<div class="social">
 					<a href="#"><i class="fas fa-database"></i></a>
 					<a href="#"><i class="fab fa-css3"></i></a>
@@ -52,10 +52,26 @@
 					<a href="#"><i class="fab fa-node-js"></i></a>
 					<a href="#"><i class="fab fa-aws"></i></a>
 				</div>
-
-
 				<br>
-				<button type="button" onclick="contact" href="">Certifiates</button>
+
+				<!-- Open Modal -->
+				<button type="button" class="btn open-btn">Certifiates</button>
+
+				<!-- Modal -->
+				<dialog class="modal" id="modal">
+					<p class="heading">Certificates</p>
+					
+					
+					<!-- Images -->
+					<img class="certificate" src="./certificates/IT Essentials.jpg" alt="picture">
+					<img class="certificate" src="./certificates/Lilitha Mantini Certificate_page-0001.jpg" alt="picture">
+					<img class="certificate" src="./certificates/ICT.jpg" alt="picture">
+					<br>
+
+					<!-- Close Modal -->
+					<button type="button" class="btn close-btn">Close</button>
+				</dialog>
+
 			</div>
 		</div>
 	</section>
@@ -107,35 +123,18 @@
 	<div class="profile">
 			
 			<!-- Heading of the secton -->
-			<p class="title">Let Me see my work.</p><br>
+			<p class="title">Let Me show you my work.</p><br>
 
-
-			<!-- Projects -->
-		<div class="container">
-
-			<!-- Button -->
-			<!-- <div class="dropdown">
-				<button class="dropbtn">Dropdown</button>
-					<div class="dropdown-content">
-		  				<a href="#">Link 1</a>
-		  				<a href="#">Link 2</a>
-		  				<a href="#">Link 3</a>
-					</div>
-	  		</div> -->
+			
+		
+<div class="wrapper">
+	<img src="./img/main-img.png" alt="picture">
+	<div class="overlay">
+		<div class="content">Image Hover</div>
+	</div>
+</div>
 
 		
-		</div>
-
-		<div class="second">
-				<!-- Images -->
-
-				<div class="one-by-two-image-grid">
-					<div class="image-1"><img class= "sthombe-1" src="https://source.unsplash.com/1600x900?nature" alt=""/>  </div>
-					<div class="image-2"><img class= "sthombe" src="https://source.unsplash.com/1600x900?boat" alt=""/></div>
-					<div class="image-3"><img class= "sthombe" src="https://source.unsplash.com/1600x900?mountains" alt=""/></div>
-				  </div>
-		</div>
-			
 	</div>
 	
 	</section>
@@ -167,4 +166,6 @@
 		<p class="end">CopyRight By Lilitha A. Mantini</p>
 	</footer>
 	<script src="scrip.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
 </body>

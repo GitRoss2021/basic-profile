@@ -1,48 +1,36 @@
-/** Filter projects according to its skillset**/
-var nav = document.querySelector('nav'); // Identify target
+// Identify target
+var nav = document.querySelector('nav'); 
 
-window.addEventListener('scroll', function(event) { // To listen for event
+
+// To listen for event
+window.addEventListener('scroll', function(event) { 
     event.preventDefault();
 
-    if (window.scrollY <= 100) { // Just an example
+    // Scroll animation
+    if (window.scrollY <= 100) { 
         nav.style.backgroundColor = 'transparent'; // or default color
     } else {
         nav.style.backgroundColor = '#191919';
     }
 });
 
-// function filterBoxs(c){
-//    var x, i;
-// x = document.getElementsByClassName(card1)
-// if (c == "All") c = "";
-// for (i = 0; i< x.length; i++){
-//     removeClass(x[i], "Show");
-//     if(x[i].className.iindexOf(c) > -1) addClass(x[i],"Show")
-//     }
-// }
+
+// Modal
+const modal = document.querySelector ('.modal');
+const OpenModal = document.querySelector ('.open-btn');
+const CloseModal = document.querySelector ('.close-btn');
 
 
-
-// function addClass(element, className){
-//     var i, arr1, arr2;
-//  arr1 = element.className.split("");
-//  arr2 = name.split("");
-//  for (i = 0; i< arr2.length; i++){
-//      if(arr1.indexOf(arr2[i]) == -1){
-//         element.className += "" + arr2[i]
-//         }
-//     }
-//  }
+// Open Modal
+OpenModal.addEventListener('click',() => {
+    modal.showModal();
+})
 
 
- 
-// function removeClass(element, name){
-//     var i, arr1, arr2;
-//  arr1 = element.className.split(""); 
-//  arr2 = name.split("");
-//  for (i = 0; i < arr2.length; i++){
-//      while(arr1.indexOf(arr2[i]) > -1){
-//     arr1.splice(arr1.indexOf(arr2[i]), 1)
-//      }
-//  }
-// }
+// Close Modal
+CloseModal.addEventListener('click',() => {
+    modal.close();
+})
+
+
+// slider images
