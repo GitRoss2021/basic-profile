@@ -68,9 +68,9 @@ nav ul li a:hover{
 	transition: transform .4s; 
 }
 .btn:hover{
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
-.content{
+.content-hero{
 	position: absolute;
 	top: 50%;
 	left:8%;
@@ -324,20 +324,111 @@ h5{
 	justify-content: center;
 }
 
-.wrapper{
-	width: 400px;
-	height: 300px;
-}
+.container{
+	display: flex;
+	gap: 40px !important;
+	width: 100%;
+	padding: 1em 0;
+	float: left;
 
-img{
-	display: block;
-	width: 60%;
-	height: auto;
-}
+  }
 
-.content{
+  @media screen and (max-width: 640px){
+	.container{
+	  display: block;
+	  width: 100%;
+	}
+  }
+  
+  @media screen and (min-width: 900px){
+	.container{
+		height: 50%;
+	  width: 90%;
+	}
+  }
+  
+ 
+  
+  .content {
+	position: relative;
+	width: 490px !important;
+	height: 265px;
+	max-width: 700px;
+	margin:5px auto;
+	border-radius: 20px;
+	overflow: hidden;
+  }
+  
+  .content .content-overlay {
+	background: rgba(0,0,0,0.7);
 	position: absolute;
-}
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+	opacity: 1;
+  }
+  
+  .content-image{
+	width: 100%;
+	height: 100%;
+  }
+  
+  .content-details {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+	top: 90%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content .content-details:hover{
+	font-size: 10px !important;
+	top: 70%;
+	left: 49.9%;
+	opacity: 1;
+  }
+  
+  .content-details h3{
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+  }
+
+  
+  
+  .content-details p{
+	color: #fff;
+	font-size: 17px;
+  }
+  
+  .fadeIn-bottom{
+	top: 80%;
+  }
+  
+
 
 /* Footer*/
 footer{
@@ -391,4 +482,3 @@ footer p:nth-child(2){
 }
 
 
-/*Projects*/
