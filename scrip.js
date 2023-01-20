@@ -11,6 +11,7 @@ window.addEventListener('scroll', function(event) {
         nav.style.backgroundColor = 'transparent'; // or default color
     } else {
         nav.style.backgroundColor = '#191919';
+        nav.style.backgroundWidth = '100%';
     }
 });
 
